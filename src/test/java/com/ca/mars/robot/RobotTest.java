@@ -1,0 +1,36 @@
+package com.ca.mars.robot;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class RobotTest {
+
+    @Test
+    public void must_move_right() {
+        Robot robot = new Robot();
+
+        Position position = robot.move("MMRMMRMM");
+
+        assertEquals(2l,  position.getX());
+        assertEquals(0l,  position.getY());
+        assertEquals(Orientation.South.getInitials(),  position.getOrientationInitial());
+    }
+
+    @Test
+    public void must_move_left() {
+        Robot robot = new Robot();
+
+        Position position = robot.move("MML");
+
+        assertEquals(0l,  position.getX());
+        assertEquals(2l,  position.getY());
+        assertEquals(Orientation.West.getInitials(),  position.getOrientationInitial());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void should_invalidate_command() {
+        Robot robot = new Robot();
+        robot.move("AAA");
+    }
+}
