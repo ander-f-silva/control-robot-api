@@ -33,4 +33,16 @@ public class RobotTest {
         Robot robot = new Robot();
         robot.move("AAA");
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void should_height_invalidate() {
+        Robot robot = new Robot();
+        robot.move("MMMMMMMMMMMMMMMMMMMMMMMM");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void should_width_invalidate() {
+        Robot robot = new Robot();
+        robot.move("MRMMMMMMMMMMMMMMMMMMMMMMM");
+    }
 }
