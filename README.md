@@ -4,7 +4,7 @@ Projeto responsável pelas apis que irão controlar os passos de um robô no ter
 
 ## Tecnologias utilizadas
 
-* Linguagem Java - Versão 1.8 (Oracle 1.8.31)
+* Linguagem Java - Versão 1.8 (Oracle 1.8.0_121)
 
 * Spring Boot - Framerwork Web para geração das API's
 
