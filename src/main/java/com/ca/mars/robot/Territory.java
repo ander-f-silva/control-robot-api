@@ -15,7 +15,7 @@ public enum Territory {
 
     public static void validate(long height, long width) {
         if (HEIGHT.value < height || WIDTH.value < width) {
-            throw new IllegalArgumentException("");
+            throw new IllegalArgumentException("Number of commands exceeded limit allowed!");
         }
     }
 }
