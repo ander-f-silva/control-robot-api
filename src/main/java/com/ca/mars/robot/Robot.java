@@ -10,9 +10,11 @@ public class Robot {
         long total = commands.length();
         Position position = new Position();
 
-        for (int i = 0; i < total; i ++) {
+        for (int i = 0; i < total; i ++)
             ActionRobot.indentifyCommand(String.valueOf(commands.charAt(i))).execute(position);
-        }
+
         return position;
     }
+
+
 }
