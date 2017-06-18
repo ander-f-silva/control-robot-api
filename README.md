@@ -2,13 +2,13 @@
 
 Projeto responsável pelas apis que irão controlar os passos de um robô no território de Marte.
 
-# Tecnologias utilizadas
+## Tecnologias utilizadas
 
-Linguagem Java - Versão 1.8 (Oracle 1.8.31)
+* Linguagem Java - Versão 1.8 (Oracle 1.8.31)
 
-Spring Boot - Framerwork Web para geração das API's
+* Spring Boot - Framerwork Web para geração das API's
 
-Maven 3 - Ferramenta de Build.
+* Maven 3 - Ferramenta de Build.
 
 Para realizar o CI usei o Travis com a plataforma Pass Heroku para relizar o deploy da API.
 
