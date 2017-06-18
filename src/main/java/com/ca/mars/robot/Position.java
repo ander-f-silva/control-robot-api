@@ -26,6 +26,8 @@ public class Position {
                 y--;
                 break;
         }
+
+        Territory.validate(y, x);
     }
 
     public void moveLeft() {
