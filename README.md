@@ -16,7 +16,7 @@ Para realizar o CI usei o Travis com a plataforma Pass Heroku para relizar o dep
 
 Quando realizo um push o pull request, automanticamente o Travis já efetuar o build e realizava o deploy no heroku.
 
-![Travis](https://github.com/ander-f-silva/control-robot-api/blob/master/images/travis.png)
+![Travis](https://github.com/ander-f-silva/control-robot-api/blob/develop/images/travis.png)
 
 Para acessar a serviços usados acione a url (POST) https://control-robot-api.herokuapp.com/rest/mars/${commands}
 
@@ -26,7 +26,7 @@ Payload de retorno:
 {
     "x": 2,
     "y": 0,
-    "orientationInitial": "S"
+    "orientation": "S"
 }
 ```
 ## Evidências:
