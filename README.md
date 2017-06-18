@@ -28,3 +28,11 @@ Payload de retorno:
 1. Teste no Postman:
 
 https://github.com/ander-f-silva/control-robot-api/wiki/Evid%C3%AAncia-POSTMAN---Teste-sobre-os-servi%C3%A7os
+
+2. Teste no Junit:
+
+https://github.com/ander-f-silva/control-robot-api/wiki/Evid%C3%AAncia-JUNIT---Teste-unit%C3%A1rio
+
+## Gestão do Projeto e técnicas para construção da API
+
+Organizei as atividade usando Kaban com Zenhub e TDD para realizar os testes e construção no design das classes.
