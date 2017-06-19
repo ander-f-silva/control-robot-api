@@ -1,5 +1,7 @@
 package com.ca.mars.robot;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Position {
     private long x;
     private long y;
@@ -46,6 +48,7 @@ public class Position {
         return y;
     }
 
+    @JsonProperty("orientation")
     public String getOrientation() {
         return orientation.getInitials();
     }
