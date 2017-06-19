@@ -10,7 +10,13 @@ Projeto responsável pelas apis que irão controlar os passos de um robô no ter
 
 * Maven 3 - Ferramenta de Build.
 
+O repositório utilizado é o Github, onde utilizei o Git flow com a branch develop e master para gerenciar o fonte.
+
 Para realizar o CI usei o Travis com a plataforma Pass Heroku para relizar o deploy da API.
+
+Quando realizo um push o pull request, automanticamente o Travis já efetuar o build e realizava o deploy no heroku.
+
+![Travis](https://github.com/ander-f-silva/control-robot-api/blob/develop/images/travis.png)
 
 Para acessar a serviços usados acione a url (POST) https://control-robot-api.herokuapp.com/rest/mars/${commands}
 
@@ -20,7 +26,7 @@ Payload de retorno:
 {
     "x": 2,
     "y": 0,
-    "orientationInitial": "S"
+    "orientation": "S"
 }
 ```
 ## Evidências:
