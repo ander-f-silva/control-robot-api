@@ -14,7 +14,7 @@ public class RobotTest {
 
         assertEquals(2l,  position.getX());
         assertEquals(0l,  position.getY());
-        assertEquals(Orientation.South.getInitials(),  position.getOrientationInitial());
+        assertEquals(Orientation.SOUTH.getInitials(),  position.getOrientation());
     }
 
     @Test
@@ -25,7 +25,7 @@ public class RobotTest {
 
         assertEquals(0l,  position.getX());
         assertEquals(2l,  position.getY());
-        assertEquals(Orientation.West.getInitials(),  position.getOrientationInitial());
+        assertEquals(Orientation.WEST.getInitials(),  position.getOrientation());
     }
 
     @Test(expected = IllegalArgumentException.class)

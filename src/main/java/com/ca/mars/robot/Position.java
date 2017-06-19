@@ -8,21 +8,21 @@ public class Position {
     public Position() {
         x = 0;
         y = 0;
-        orientation = Orientation.North;
+        orientation = Orientation.NORTH;
     }
 
     public void updateAxis() {
         switch (orientation) {
-            case East:
+            case EAST:
                 x++;
                 break;
-            case West:
+            case WEST:
                 x--;
                 break;
-            case North:
+            case NORTH:
                 y++;
                 break;
-            case South:
+            case SOUTH:
                 y--;
                 break;
         }
@@ -46,7 +46,7 @@ public class Position {
         return y;
     }
 
-    public String getOrientationInitial() {
+    public String getOrientation() {
         return orientation.getInitials();
     }
 }

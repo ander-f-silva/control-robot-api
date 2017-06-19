@@ -2,10 +2,10 @@ package com.ca.mars.robot;
 
 public enum Orientation {
 
-    North("N"),
-    South("S"),
-    East("E"),
-    West("W");
+    NORTH("N"),
+    SOUTH("S"),
+    EAST("E"),
+    WEST("W");
 
     private String initials;
 
@@ -19,27 +19,27 @@ public enum Orientation {
 
     public static Orientation moveLeft(Orientation orientation) {
         switch (orientation) {
-            case North:
-                return Orientation.West;
-            case West:
-                return Orientation.South;
-            case South:
-                return Orientation.East;
+            case NORTH:
+                return Orientation.WEST;
+            case WEST:
+                return Orientation.SOUTH;
+            case SOUTH:
+                return Orientation.EAST;
             default:
-                return Orientation.North;
+                return Orientation.NORTH;
         }
     }
 
     public static Orientation moveRight(Orientation orientation) {
         switch (orientation) {
-            case North:
-                return Orientation.East;
-            case East:
-                return Orientation.South;
-            case South:
-                return Orientation.West;
+            case NORTH:
+                return Orientation.EAST;
+            case EAST:
+                return Orientation.SOUTH;
+            case SOUTH:
+                return Orientation.WEST;
            default:
-                return Orientation.North;
+                return Orientation.NORTH;
         }
     }
 

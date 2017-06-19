@@ -8,46 +8,46 @@ public class OrientationTest {
 
     @Test
     public void should_move_left_north() {
-        assertEquals(Orientation.West, Orientation.moveLeft(Orientation.North));
+        assertEquals(Orientation.WEST, Orientation.moveLeft(Orientation.NORTH));
     }
 
     @Test
     public void should_move_left_south() {
-        assertEquals(Orientation.South, Orientation.moveLeft(Orientation.West));
+        assertEquals(Orientation.SOUTH, Orientation.moveLeft(Orientation.WEST));
 
     }
 
     @Test
     public void should_move_left_east() {
-        assertEquals(Orientation.East, Orientation.moveLeft(Orientation.South));
+        assertEquals(Orientation.EAST, Orientation.moveLeft(Orientation.SOUTH));
 
     }
 
     @Test
     public void should_move_left_west() {
-        assertEquals(Orientation.North, Orientation.moveLeft(Orientation.East));
+        assertEquals(Orientation.NORTH, Orientation.moveLeft(Orientation.EAST));
     }
 
     @Test
     public void should_move_right_north() {
-        assertEquals(Orientation.East, Orientation.moveRight(Orientation.North));
+        assertEquals(Orientation.EAST, Orientation.moveRight(Orientation.NORTH));
     }
 
     @Test
     public void should_move_right_south() {
-        assertEquals(Orientation.West, Orientation.moveRight(Orientation.South));
+        assertEquals(Orientation.WEST, Orientation.moveRight(Orientation.SOUTH));
 
     }
 
     @Test
     public void should_move_right_east() {
-        assertEquals(Orientation.South, Orientation.moveRight(Orientation.East));
+        assertEquals(Orientation.SOUTH, Orientation.moveRight(Orientation.EAST));
 
     }
 
     @Test
     public void should_move_right_west() {
-        assertEquals(Orientation.North, Orientation.moveRight(Orientation.West));
+        assertEquals(Orientation.NORTH, Orientation.moveRight(Orientation.WEST));
     }
 
 }
