@@ -17,13 +17,11 @@ public enum ActionRobot {
         commands.execute(position);
     }
 
-   public static ActionRobot indentifyCommand(String command) throws IllegalArgumentException {
-        for (ActionRobot action : ActionRobot.values()) {
-            if (action.name().equals(command)) {
-                return action;
-            }
+    public static ActionRobot indentifyCommand(String command) throws IllegalArgumentException {
+        try {
+            return valueOf(command);
+        } catch (IllegalArgumentException iex) {
+            throw new IllegalArgumentException("There is no " + command + " command!");
         }
-                
-        throw new IllegalArgumentException("There is no " + command + " command!");
     }
 }
