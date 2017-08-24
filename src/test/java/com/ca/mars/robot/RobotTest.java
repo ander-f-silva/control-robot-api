@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class RobotTest {
 
     @Test
-    public void must_move_right() {
+    public void mustMoveRight() {
         Robot robot = new Robot();
 
         Position position = robot.move("MMRMMRMM");
@@ -18,7 +18,7 @@ public class RobotTest {
     }
 
     @Test
-    public void must_move_left() {
+    public void mustMoveLeft() {
         Robot robot = new Robot();
 
         Position position = robot.move("MML");
@@ -29,19 +29,19 @@ public class RobotTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void should_invalidate_command() {
+    public void shouldInvalidateCommand() {
         Robot robot = new Robot();
         robot.move("AAA");
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void should_height_invalidate() {
+    public void shouldHeightInvalidate() {
         Robot robot = new Robot();
         robot.move("MMMMMMMMMMMMMMMMMMMMMMMM");
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void should_width_invalidate() {
+    public void shouldWidthInvalidate() {
         Robot robot = new Robot();
         robot.move("MRMMMMMMMMMMMMMMMMMMMMMMM");
     }
