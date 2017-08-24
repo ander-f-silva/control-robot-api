@@ -7,46 +7,42 @@ import static org.junit.Assert.*;
 public class OrientationTest {
 
     @Test
-    public void should_move_left_north() {
+    public void shouldMoveLeftNorth() {
         assertEquals(Orientation.WEST, Orientation.moveLeft(Orientation.NORTH));
     }
 
     @Test
-    public void should_move_left_south() {
+    public void shouldMoveLeftSouth() {
         assertEquals(Orientation.SOUTH, Orientation.moveLeft(Orientation.WEST));
-
     }
 
     @Test
-    public void should_move_left_east() {
+    public void shouldMoveLeftEast() {
         assertEquals(Orientation.EAST, Orientation.moveLeft(Orientation.SOUTH));
-
     }
 
     @Test
-    public void should_move_left_west() {
+    public void shouldMoveLeftWest() {
         assertEquals(Orientation.NORTH, Orientation.moveLeft(Orientation.EAST));
     }
 
     @Test
-    public void should_move_right_north() {
+    public void shouldMoveRightNorth() {
         assertEquals(Orientation.EAST, Orientation.moveRight(Orientation.NORTH));
     }
 
     @Test
-    public void should_move_right_south() {
+    public void shouldMoveRightSouth() {
         assertEquals(Orientation.WEST, Orientation.moveRight(Orientation.SOUTH));
-
     }
 
     @Test
-    public void should_move_right_east() {
+    public void shouldMoveRightEast() {
         assertEquals(Orientation.SOUTH, Orientation.moveRight(Orientation.EAST));
-
     }
 
     @Test
-    public void should_move_right_west() {
+    public void shouldMoveRightWest() {
         assertEquals(Orientation.NORTH, Orientation.moveRight(Orientation.WEST));
     }
 
