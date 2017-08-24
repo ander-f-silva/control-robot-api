@@ -6,13 +6,15 @@ Projeto responsável pelas apis que irão controlar os passos de um robô no ter
 
 * Linguagem Java - Versão 1.8 (Oracle 1.8.0_121)
 
-* Spring Boot - Framerwork Web para geração das API's
+* Spring Boot - Framerwork Web para geração das API's (versão 2.0.0) com Netty
 
 * Maven 3 - Ferramenta de Build.
 
 O repositório utilizado é o Github, onde utilizei o Git flow com a branch develop e master para gerenciar o fonte.
 
 Para realizar o CI usei o Travis com a plataforma Pass Heroku para relizar o deploy da API.
+
+Na pasta postman tem um projeto que poderá ser importado para testar na plataforma Heroku (novo item).
 
 Quando realizo um push o pull request, automanticamente o Travis já efetuar o build e realizava o deploy no heroku.
 
