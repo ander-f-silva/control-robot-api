@@ -1,20 +1,20 @@
 package com.ca.mars.robot;
 
-import java.security.InvalidParameterException;
+public class Territory {
 
-public enum Territory {
+   private long height = 5;
+   private long width = 5;
 
-    HEIGHT(5),
-    WIDTH(5);
-
-    private long value;
-
-    Territory(long value) {
-        this.value = value;
+    public Territory() {
     }
 
-    public static void validate(long height, long width) {
-        if (HEIGHT.value < height || WIDTH.value < width) {
+    public Territory(long height, long width) {
+        this.height = height;
+        this.width = width;
+    }
+
+    public void validate(long height, long width) {
+        if (this.height < height || this.width < width) {
             throw new IllegalArgumentException("Number of commands exceeded limit allowed!");
         }
     }

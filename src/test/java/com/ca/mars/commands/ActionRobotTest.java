@@ -7,26 +7,23 @@ import static org.junit.Assert.assertEquals;
 public class ActionRobotTest {
 
    @Test
-   public void should_move_a_position() {
+   public void shouldMoveAPosition() {
        assertEquals(ActionRobot.M, ActionRobot.indentifyCommand("M"));
    }
 
     @Test
-    public void should_move_right(){
+    public void shouldMoveRight(){
         assertEquals(ActionRobot.R, ActionRobot.indentifyCommand("R"));
     }
 
     @Test
-    public void should_move_left(){
+    public void shouldMoveLeft(){
         assertEquals(ActionRobot.L, ActionRobot.indentifyCommand("L"));
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void should_return_an_illegal_argument_exception(){
+    public void shouldReturnAnIllegalArgumentException(){
         ActionRobot.indentifyCommand("A");
     }
-
-
-
 
 }
