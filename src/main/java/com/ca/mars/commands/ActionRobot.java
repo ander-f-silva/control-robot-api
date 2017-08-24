@@ -1,9 +1,14 @@
 package com.ca.mars.commands;
 
 import com.ca.mars.robot.Position;
+import com.ca.mars.robot.Territory;
 
 public enum ActionRobot {
-    M(p -> p.updateAxis()),
+    M(p -> {
+        p.updateAxis();
+        Territory territory = new Territory();
+        territory.validate(p.getY(), p.getX());
+    }),
     L(p -> p.moveLeft()),
     R(p -> p.moveRight());
 
